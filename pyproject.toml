@@ -1,0 +1,18 @@
+[project]
+name = "learning-python-crash-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.uv.sources]
+crash-course = { workspace = true }
+
+[tool.uv.workspace]
+members = ["apps-uv/*"]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+]
